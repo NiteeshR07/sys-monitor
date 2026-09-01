@@ -1,0 +1,13 @@
+[Unit]
+Description=Linux Server Resource Monitor
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/sys-monitor
+ExecStart=/usr/bin/python3 /opt/sys-monitor/monitor.py --loop 60
+Restart=on-failure
+User=nobody
+
+[Install]
+WantedBy=multi-user.target

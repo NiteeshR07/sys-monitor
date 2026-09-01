@@ -1,0 +1,14 @@
+# Resource usage thresholds (percentage). An alert fires when usage >= value.
+cpu_percent: 80
+ram_percent: 80
+disk_percent: 85
+disk_path: "/"
+
+# Optional email alerts. Leave blank to disable — alerts will still be
+# logged to logs/incidents.log either way.
+# email:
+#   smtp_server: "smtp.gmail.com"
+#   smtp_port: 587
+#   sender: "your_email@gmail.com"
+#   password: "your_app_password"
+#   recipient: "you_will_get_alerts@gmail.com"
